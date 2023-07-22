@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoBovine</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="header">
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/5.png" width="180px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="existingTech.html">Existing Tech</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" width="30px" height="30px" onclick="menutoggle()">
+        </div>
+    </div>
+</div>
+
+<main>
+<br><br>
+
+<!---------Products-------->
+<div class="small-container">
+    <h2 class="title">Featuring Products</h2><br><br>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/papertowels.png"></a><br><br><br><br>
+            <h4>Dari-Towels</h4>
+        </div>
+        <div class="col-4">
+            <img src="images/towels.png"></a><br>
+            <h4>Micro-fibre Towels</h4>
+            </div>
+        <div class="col-4">
+            <img src="images/wipes.jpg"></a><br><br>
+            <h4>Disinfected Wipes</h4>
+        </div>
+        <div class="col-4">
+            <img src="images/dipcups.png"></a><br>
+            <h4>Dip Cups</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+        <img src="images/wipers.png"></a><br><br>
+        <h4>Post-dip Wipers</h4>
+        </div>
+        <div class="col-4">
+            <img src="images/scrubber.png"></a><br><br><br><br><br><br><br>
+            <h4>Teat Scrubbers</h4>
+            </div>
+        <div class="col-4">
+            <img src="images/spraybottle.png"></a>
+            <h4>Spray Bottles</h4>
+        </div>
+        <div class="col-4">
+            <img src="images/spraywand.png"></a><br>
+            <h4>Spray Wands</h4>
+        </div>
+    </div>
+</div>
+
+</aside>
+
+<!----------------footer-------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Site Map</h3>
+                <p>Find your way through...</p><br>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="existingTech.html">Existing Tech</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/5.1.png" width="100px" >
+                <p>Our mission is to produce and market high-quality milk and equipment in sufficient
+                     quantity to provide a good standard of living for our family and our employees</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Beneficial Links</h3>
+                <ul>
+                    <li>Our Blog</li>
+                    <li>Coupon</li>
+                    <li>Return Policy</li>
+                    <li>Joint Affliate</li>
+
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Contact Us On</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>LinkedIn</li>
+
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023-RoBovine</p>
+    </div>
+</div>
+
+<!---------------js for toggle------------------->
+<script>
+    var MenuItems= document.getElementById("MenuItems");
+    MenuItems.style.maxHeight= "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight =="0px")
+        {
+            MenuItems.style.maxHeight= "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight= "0px";
+        }
+    }
+</script>
+
+</body>
+</html>

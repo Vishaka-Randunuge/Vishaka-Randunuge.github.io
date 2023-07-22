@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoBovine</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="header">
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/5.png" width="180px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="existingTech.html">Existing Tech</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" width="30px" height="30px" onclick="menutoggle()">
+        </div>
+    </div>
+</div>
+
+<main>
+
+    <img src="images/1.png" width=100%>
+
+<!---------featured categories-------->
+<div class="catergories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="images/2.png">
+            </div>
+            <div class="col-3">
+                <img src="images/3.png">
+            </div>
+            <div class="col-3">
+                <img src="images/productuse.png">
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+
+<h2 class="title">Emerging Product</h2>
+
+<div class="offer">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                
+                <img src="images/productreal.png" class="offer-img" >
+            </div>
+            <div class="col-2"> 
+                <br>
+                <h4>
+                    ▪ A lightweight, ergonomic delivery system that automates the cleaning, disinfecting, stimulation, drying, and post-dip treatmentofdairy cowteats.
+                    <br><br><br>
+                    ▪ Eliminates the need for human contactwith the cowteat and reduces the incidence of bacterial infection.
+                    <br><br><br>
+                    ▪  Consistent handling ofthe cowteat along with the abilityto customize water temperature and air pressure reduces cow stress and increases milkﬂow-rate.
+                    <br><br><br>
+                    ▪ Lowers chemical residue in the milk by avoiding over-spray ofdisinfectant onto the udder and by more thoroughly washing and drying the teat.
+                    <br><br><br>
+                    ▪ Reduces the use ofchemical solution bytwo-thirds and eliminates the need for towels.
+                    <br><br>
+                </h4>               
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+            <h3>Product Structure</h3><br>
+            <img src="images/product.png"></div>
+        
+            <div class="col-3">
+            <h3>Product In Use</h3><br>
+            <img src="images/productuse.png"></div>
+        
+            <div class="col-3">
+            <h3>Product View</h3><br>
+            <img src="images/productreal.png">
+            </div>
+        </div>
+    </div>
+
+<br><br>
+<h2 class="title">Explore Our Video Demonstrations</h2>
+<!-----videos--->
+<div class="video">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <h3>Pre Milking Video</h3><br>
+                <iframe src="https://drive.google.com/file/d/1nhjHxGkXBTAIvfGm99OSBGAspLA-2SFZ/preview" width="320" height="240" allow="autoplay"></iframe>
+                
+            </div>
+            <div class="col-2">
+                <h3>Post Milking Video</h3><br>
+                <iframe src="https://drive.google.com/file/d/1OtZRJ0y6RoDxuLAZnWfslFmB1jK9eliR/preview" width="320" height="240" allow="autoplay"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</aside>
+<!----------------footer-------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Site Map</h3>
+                <p>Find your way through...</p><br>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="existingTech.html">Existing Tech</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/5.1.png" width="100px" >
+                <p>Our mission is to produce and market high-quality milk and equipment in sufficient
+                     quantity to provide a good standard of living for our family and our employees</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Beneficial Links</h3>
+                <ul>
+                    <li>Our Blog</li>
+                    <li>Coupon</li>
+                    <li>Return Policy</li>
+                    <li>Joint Affliate</li>
+
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Contact Us On</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>LinkedIn</li>
+
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023-RoBovine</p>
+    </div>
+</div>
+
+<!---------------js for toggle------------------->
+<script>
+    var MenuItems= document.getElementById("MenuItems");
+    MenuItems.style.maxHeight= "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight =="0px")
+        {
+            MenuItems.style.maxHeight= "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight= "0px";
+        }
+    }
+</script>
+
+</body>
+</html>
