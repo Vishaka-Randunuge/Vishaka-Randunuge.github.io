@@ -232,6 +232,22 @@ ul{
     margin-left: 35px;
     display: none;
 }
+
+.first{
+    background:#d6e8f8;
+}
+
+.second{
+    padding: 50px 70px 0px 70px;
+    margin: 20px;
+    align-items: center;
+    font-style: italic;
+}
+.third{
+    background:#d6e8f8;
+    margin: 20px;
+}
+
 /*---------------media query-------------------*/
 @media only screen and (max-width: 800px){
     nav ul{
@@ -269,18 +285,5 @@ ul{
     }
 }
 
-.first{
-    background:#d6e8f8;
-}
 
-.second{
-    padding: 50px 70px 0px 70px;
-    margin: 20px;
-    align-items: center;
-    font-style: italic;
-}
-.third{
-    background:#d6e8f8;
-    margin: 20px;
-}
 
