@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Vishaka Randunuge</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Vishaka Randunuge</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Vishaka profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Vishaka Randunuge</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.png')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/vishaka-randunuge-43ba20230/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Vishaka-Randunuge'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Girls' High School, Kandy.</p><br>
+              <p>Software Engineering<br />B.Sc. Bachelors Degree</p>
+              
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Positions</h3>
+              <p>KGHS Senior Committee</p>
+              <p>ICBT IT Society Secretary</p>
+              <p>Mozilla.lk Community</p>
+              <p>Foss Community</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              "A passionate, innovative, hardworking individual with team spirit,
+               excellent communication skills, and a strong work ethic, seeking a
+                great opportunity to sharpen knowledge and contribute to making
+                 new and impactful advancements in the industry." 
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Front-End Technologies</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div><h3>HTML</h3><p>Experienced</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div><h3>CSS</h3><p>Experienced</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div><h3>JavaScript</h3><p>Basic</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div><h3>ReactJS</h3><p>Beginner</p></div>
+              </article>  
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Back-End Technologies</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div><h3>PHP</h3><p>Intermediate</p></div>
+              </article>    
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div><h3>Java</h3><p>Intermediate</p></div>
+              </article>    
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div><h3>C#</h3><p>Beginner</p></div>
+              </article> 
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div><h3>Python</h3><p>Basic</p></div>
+              </article>   
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div><h3>ASP .NET</h3><p>Intermediate</p></div>
+              </article>   
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Development Environments</h2>
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div><h3>Android Development Studio</h3><p>Intermediate</p></div>
+              </article>    
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div><h3>R Studio</h3><p>Intermediate</p></div>
+              </article>    
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div><h3>Firebase</h3><p>Intermediate</p></div>
+              </article> 
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div><h3>WordPress</h3><p>Basic</p></div>
+              </article>   
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div><h3>Git</h3><p>Intermediate</p></div>
+              </article>   
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <br><br><br><br><br><br>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <div class="project-img-container">
+                <img src="./assets/cy.jpg" alt="Project 1" class="project-img"/>
+                <div class="overlay">
+                  <div class="overlay-text">
+                    (Java, Firebase) <br>
+                    Menstrual Cycle app to track and maintain health with information of medical research.
+                    Made with Android Dev Studio.                
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="experience-sub-title project-title">Cycle Empower Android App</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Vishaka-Randunuge/MyCycleEm'">
+                Github
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <div class="project-img-container">
+                <img src="./assets/main.jpg" alt="Project 1" class="project-img"/>
+                <div class="overlay">
+                  <div class="overlay-text">
+                    (Java, MySQL) <br>
+                    App to reserve workers to clean properties/houses. Made with Android Dev Studio
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="experience-sub-title project-title">Cleaning Service Android App</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Vishaka-Randunuge/Cleaning-service-App--KleanLife'">
+                Github
+              </button>
+            </div>
+          </div>
+          
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <div class="project-img-container">
+                <img src="./assets/soc.png" alt="Project 1" class="project-img"/>
+                <div class="overlay">
+                  <div class="overlay-text">
+                    (C#, MySQL) <br>
+                    Application to send couriers and manage the database. 
+                    SOC project with C# via Visual Studio .NET
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="experience-sub-title project-title">Courier Management Service App</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Vishaka-Randunuge/package-ordering-system-application-Client_Yien_Express'">
+                Github
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <div class="project-img-container">
+                <img src="./assets/home.png" alt="Project 1" class="project-img"/>
+                <div class="overlay">
+                  <div class="overlay-text">
+                    (HTML, CSS, JavaScript, PHP) <br>
+                    Web application to browse and buy clothes/shoes. via Visual Studio Code
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="experience-sub-title project-title">Daisy Wardrobe Website</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War'">
+                Github
+              </button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:vrandunuge@gmail.com">vrandunuge@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/vishaka-randunuge-43ba20230/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Vishaka Randunuge. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
