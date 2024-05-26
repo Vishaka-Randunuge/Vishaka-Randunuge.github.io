@@ -4,19 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/profile-pic.png" type="image/x-icon">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    
     <nav id="desktop-nav">
       <div class="logo">Vishaka Randunuge</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">Services</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>          
         </ul>
       </div>
     </nav>
@@ -30,6 +32,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#services" onclick="toggleMenu()">Services</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
@@ -38,7 +41,7 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/about-pic.png" alt="Vishaka profile picture" />
+        <img src="./assets/about-pic1.png" alt="Vishaka profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -51,9 +54,7 @@
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+    
         </div>
         <div id="socials-container">
           <img
@@ -76,32 +77,20 @@
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
-          <img
-            src="./assets/profile-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
+          <img src="./assets/Black-and-White.png" alt="Profile picture" class="about-pic" />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
+              <img src="./New folder/graduation-cap-fill.svg" alt="Education icon" class="icon"/>
+              <h3>Education</h3><br>
               <p>Girls' High School, Kandy.</p><br>
               <p>Software Engineering<br />B.Sc. Bachelors Degree</p>
               
             </div>
             <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Positions</h3>
+              <img src="./New folder/medal-fill.svg" alt="Education icon" class="icon"/>
+              <h3>Positions</h3><br>
               <p>KGHS Senior Committee</p>
               <p>ICBT IT Society Secretary</p>
               <p>Mozilla.lk Community</p>
@@ -118,94 +107,85 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
     </section>
+   
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <p class="section__text__p1">Experience &</p>
+      <h1 class="title">Services</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Front-End Technologies</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div><h3>HTML</h3><p>Experienced</p></div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div><h3>CSS</h3><p>Experienced</p></div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div><h3>JavaScript</h3><p>Basic</p></div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div><h3>ReactJS</h3><p>Beginner</p></div>
-              </article>  
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./New folder/terminal-box-fill.svg" alt="Education icon" class="icon"/>
+              <h3>Software Engineering</h3>
+              <br>
+              <p>Aspiring software engineer, passionate about developing efficient
+                 and innovative solutions with a strong foundation in coding principles.</p><br>
+            </div>
+            <div class="details-container">
+              <img src="./New folder/window-fill.svg" alt="Experience icon" class="icon"/>
+              <h3>Web Designing</h3>
+              <br>
+              <p>Creating visually stunning and user-friendly websites with top-notch
+                 UI/UX design for an engaging online presence.</p>
+              
             </div>
           </div>
-
-          <div class="details-container">
-            <h2 class="experience-sub-title">Back-End Technologies</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div><h3>PHP</h3><p>Intermediate</p></div>
-              </article>    
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div><h3>Java</h3><p>Intermediate</p></div>
-              </article>    
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div><h3>C#</h3><p>Beginner</p></div>
-              </article> 
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div><h3>Python</h3><p>Basic</p></div>
-              </article>   
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div><h3>ASP .NET</h3><p>Intermediate</p></div>
-              </article>   
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Development Environments</h2>
-            <div class="article-container">
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div><h3>Android Development Studio</h3><p>Intermediate</p></div>
-              </article>    
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div><h3>R Studio</h3><p>Intermediate</p></div>
-              </article>    
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div><h3>Firebase</h3><p>Intermediate</p></div>
-              </article> 
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div><h3>WordPress</h3><p>Basic</p></div>
-              </article>   
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div><h3>Git</h3><p>Intermediate</p></div>
-              </article>   
-            </div>
+          <div class="text-container">
+            <p>
+              "contributing my skills in software
+               engineering and web design to innovative projects. <br>
+               With a strong 
+               foundation and a passion for continuous learning, dedicated to 
+               delivering efficient solutions and creating visually appealing, 
+               user-friendly websites that enhance user experiences and drive success."
+            </p>
           </div>
         </div>
+        <br><br>
+        <div class="about-containers">
+          <div class="about-details-container">
+            <div class="icon-scroll-container">
+              <div class="icon-wrapper">
+                <img src="./New folder/html.png" class="icons"/>
+                <img src="./New folder/css.png" class="icons"/>
+                <img src="./New folder/js.png" class="icons"/>
+                <img src="./New folder/react.png" class="icons"/>
+                <img src="./New folder/java.png" class="icons"/>
+                <img src="./New folder/php.png" class="icons"/>
+                <img src="./New folder/python.png" class="icons"/>
+                <img src="./New folder/csharp.png" class="icons"/>
+                <img src="./New folder/anrdoid.png" class="icons"/>
+                <img src="./New folder/firebase.png" class="icons"/>
+                <img src="./New folder/word.png" class="icons"/>
+                <img src="./New folder/git.png" class="icons"/>
+                <img src="./New folder/rstu.png" class="icons"/>
+
+                <img src="./New folder/html.png" class="icons"/>
+                <img src="./New folder/css.png" class="icons"/>
+                <img src="./New folder/js.png" class="icons"/>
+                <img src="./New folder/react.png" class="icons"/>
+                <img src="./New folder/java.png" class="icons"/>
+                <img src="./New folder/php.png" class="icons"/>
+                <img src="./New folder/python.png" class="icons"/>
+                <img src="./New folder/csharp.png" class="icons"/>
+                <img src="./New folder/anrdoid.png" class="icons"/>
+                <img src="./New folder/firebase.png" class="icons"/>
+                <img src="./New folder/word.png" class="icons"/>
+                <img src="./New folder/git.png" class="icons"/>
+                <img src="./New folder/rstu.png" class="icons"/>
+              </div>
+            </div>
+          </div>
+          <br>
+        </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
     </section>
+    
+
+
     <br><br><br><br><br><br>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
@@ -297,19 +277,20 @@
           
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
     </section>
+
+<br><br><br><br><br>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
           <p><a href="mailto:vrandunuge@gmail.com">vrandunuge@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
@@ -327,7 +308,7 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#experience">Services</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
