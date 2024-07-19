@@ -53,18 +53,33 @@ nav {
   font-size: 1.5rem;
 }
 
+
 a {
   color: #3C2723;
   text-decoration: none;
-  text-decoration-color: white;
+  position: relative;
 }
 
 a:hover {
-  color: #6fa8dc;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  color: #ffffff;
 }
+
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.25em;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.4s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
 
 .logo {
   font-size: 2rem;
@@ -210,6 +225,10 @@ section {
   height: 2rem;
 }
 
+.icon:hover{
+  scale: 120%;
+}
+
 
 .btn-container {
   display: flex;
@@ -229,10 +248,18 @@ section {
   border: #93847F 0.1rem solid;
 }
 
-.download-btn, .btn-color-2:hover {
+.btn-color-2:hover {
+  scale: 105%;
   background: #3C2723;
   color: white;
   cursor: pointer;
+}
+
+.download-btn:hover{
+  text-decoration: none;
+  scale: 105%;
+  background: #3C2723;
+  color: white;
 }
 
 .btn-container {
@@ -510,4 +537,3 @@ footer {
 footer p {
   text-align: center;
 }
-
